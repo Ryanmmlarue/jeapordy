@@ -1,16 +1,29 @@
 import React from "react";
 import "./card.css";
 
-const Card = () => {
+const Card = ({ data }) => {
+  if (data === undefined) {
+    return <>Load Spinner Here</>;
+  }
+
+  const question = data[0].question;
+  const answer = data[0].answer;
+  const category = data[0].category.title;
+  const value = data[0].value;
+
   return (
     <div className="container">
       <div className="card">
         <div className="front">
-          <h1>Question</h1>
+          <div className="space-between">
+            {/* <h2>{category}</h2>
+            <h2>{value}</h2> */}
+          </div>
+          <h1>{question}</h1>
+          <input type="text" style={{ marginTop: "75px" }}></input>
         </div>
         <div className="back">
-          <h1>Back of Card</h1>
-          <p>Additional info on the back of the card</p>
+          <h1>{answer}</h1>
         </div>
       </div>
     </div>

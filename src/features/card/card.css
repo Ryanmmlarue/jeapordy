@@ -54,6 +54,15 @@ body {
 
 .front {
   transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between{
+  display: flex;
+  justify-content: space-between;
 }
 
 
