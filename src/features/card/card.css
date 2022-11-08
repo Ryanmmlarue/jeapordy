@@ -15,13 +15,22 @@ body {
 }
 
 .container {
-  width: 750px;
-  height: 375px;
+  width: 650px;
+  height: 300px;
   perspective: 800px;
 }
 
-.container:hover  > .card{
+/* .container:hover  > .card{
   cursor: pointer;
+  transform: rotateY(180deg);
+} */
+
+/* .container > .card{
+  cursor: pointer;
+  transform: rotateY(180deg);
+} */
+
+.container.is-flipped > .card {
   transform: rotateY(180deg);
 }
 
@@ -59,10 +68,4 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.space-between{
-  display: flex;
-  justify-content: space-between;
-}
-
 
