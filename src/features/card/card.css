@@ -69,3 +69,19 @@ body {
   align-items: center;
 }
 
+.top {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 25px;
+  padding-right: 30px
+}
+
+.bottom {
+  height: 60%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+

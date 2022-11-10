@@ -25,8 +25,12 @@ const Card = ({ data }) => {
     <div className="container" id="card-container">
       <div className="card">
         <div className="front">
-          <h4>{value}</h4>
-          <h2>{question}</h2>
+          <div className="top">
+            <h3>{value}</h3>
+          </div>
+          <div className="bottom">
+            <h2>{question}</h2>
+          </div>
         </div>
         <div className="back">
           <h1>{answer}</h1>

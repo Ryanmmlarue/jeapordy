@@ -3,9 +3,11 @@
 }
 
 button {
+  display:block;
   width: 75px;
   height: 75px;
-  border-radius: 100%;
+  border-radius: 75%;
+  border: 1px solid gray;
 }
 
 .controls {
