@@ -38,18 +38,22 @@ const App = () => {
     var card = document.getElementById("card-container");
     if (card.classList.contains("is-flipped")) {
       card.classList.remove("is-flipped");
+      setTimeout(() => getNewQuestion(), 500);
+    } else {
+      getNewQuestion();
     }
     setScore(score + questionValue);
-    getNewQuestion();
   };
 
   const decrementScore = (event) => {
     var card = document.getElementById("card-container");
     if (card.classList.contains("is-flipped")) {
       card.classList.remove("is-flipped");
+      setTimeout(() => getNewQuestion(), 500);
+    } else {
+      getNewQuestion();
     }
     setScore(score - questionValue);
-    getNewQuestion();
   };
 
   return (

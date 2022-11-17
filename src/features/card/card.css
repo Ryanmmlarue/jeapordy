@@ -20,16 +20,6 @@ body {
   perspective: 800px;
 }
 
-/* .container:hover  > .card{
-  cursor: pointer;
-  transform: rotateY(180deg);
-} */
-
-/* .container > .card{
-  cursor: pointer;
-  transform: rotateY(180deg);
-} */
-
 .container.is-flipped > .card {
   transform: rotateY(180deg);
 }
