@@ -19,20 +19,35 @@ const Card = ({ data }) => {
         card.classList.toggle("is-flipped");
       }
     });
+
+    var top = document.getElementById("top");
+    top.addEventListener("click", (event) => {
+      card.classList.toggle("is-flipped");
+    });
+
+    var bottom = document.getElementById("bottom");
+    bottom.addEventListener("click", (event) => {
+      card.classList.toggle("is-flipped");
+    });
+
+    var back = document.getElementById("back");
+    back.addEventListener("click", (event) => {
+      card.classList.toggle("is-flipped");
+    });
   }, []);
 
   return (
     <div className="container" id="card-container">
       <div className="card">
         <div className="front">
-          <div className="top">
+          <div className="top" id="top">
             <h3>{value}</h3>
           </div>
-          <div className="bottom">
+          <div className="bottom" id="bottom">
             <h2>{question}</h2>
           </div>
         </div>
-        <div className="back">
+        <div className="back" id="back">
           <h1>{answer}</h1>
         </div>
       </div>
